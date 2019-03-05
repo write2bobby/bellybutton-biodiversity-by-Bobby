@@ -4,9 +4,9 @@ Created an interactive dashboard to explore the Belly Button Biodiversity Data S
 analysis. Technologies used: HTML/CSS/Bootstrap, JavaScript Library Plotly, Python and Flask
 
 https://belly-button-biodiversity.herokuapp.com/
+
 # Belly Button Biodiversity
 
-![Bacteria by filterforge.com](Images/bacteria_by_filterforgedotcom.jpg)
 
 In this assignment, you will build an interactive dashboard to explore the [Belly Button Biodiversity DataSet](http://robdunnlab.com/projects/belly-button-biodiversity/).
 
