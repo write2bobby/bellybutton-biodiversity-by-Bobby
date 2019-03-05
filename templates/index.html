@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BellyButtonBiodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/styles.css') }}" />
+
+</head>
+
+<body style="background-color:lightgray;">
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid" >
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <div class="col-sm-1"></div><h3>BellyButtons.com</h3></a>
+  </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style= "color: black;">Photos<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">#</a></li>
+          <li><a href="#">#</a></li>
+          <li><a href="#">#</a></li>
+          <li><a href="#">#</a></li>
+        </ul>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style= "color: black;"> Belly Button Stuff<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Bobby</a></li>
+          <li><a href="#">Robert</a></li>
+          <li><a href="#">John</a></li>
+          <li><a href="#">Aryan</a></li>
+        </ul>
+      </li>
+      <li><a href="#" style= "color: black;">About Us</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+  </nav>
+
+  <div class="jumbotron" >
+    <div class = "container">
+      <h1 style="font-weight: bold;">Belly Button Biodiversity Dashboard</h1>
+      <p>Use the interactive charts below to explore the dataset</p>
+    </div>
+  </div>
+
+  <div class = "container">
+    <row>
+    <label for="selDataset">SELECT Sample: </label>
+    <select id="selDataset" onchange="optionChanged(this.value)"></select>
+  </div>
+  <br>
+<div class = "container">
+  <row>
+    <div class = "panel panel-primary" style = "width: 200px; height: 200px;">
+      <div class = "panel-heading" style = "font-weight: bold; text-align: center; font-size: 18px;">Sample Metadata</div>
+      <div id = "metatable" class = "panel-body"></div>
+    </div>
+    <div id = "pie"></div>
+  </row>
+  <br>
+  <div class = "container">
+    <div id = "bubble"></div>
+    </div>
+
+  <br>
+  <div class = "container">
+    <div id = "gauge"></div>
+  </div>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <div class="container" style="background: lightgray; border-radius: 5px;">     
+    <div class="site-Footer">
+      <div class="col-md-12" align = "center"> 
+        <h4>Website created by
+          <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+          <a  id="Bobby">Bobby Bhattacharjee</a>
+          <span class="glyphicon glyphicon-king" aria-hidden="true"></span>
+        </h4>
+      </div>   
+    </div>
+  </div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+
+</html>
